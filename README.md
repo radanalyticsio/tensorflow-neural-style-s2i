@@ -2,9 +2,6 @@
 
 This image is based off of Anish Athalye's [neural-style](https://github.com/anishathalye/neural-style).
 
-## Setup
-Place the [pre-trained VGG network](http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat) in the neural-style directory
-
 ## Usage
 ```
 oc create template -f https://raw.githubusercontent.com/RobGeada/neural-style-s2i/master/template.json
