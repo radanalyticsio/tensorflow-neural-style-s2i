@@ -37,7 +37,7 @@ oc new-app --template neural-style --param=STYLE_URL=[url of style image] --para
 Due to how this implementation of neural-style works, pre-trained models will only work when provided with the _exact same pair of content and style images_. 
 
 ## License
-The original code upon which this is based is copyright, the details of which have been provided below.
+The original neural-style code upon which this is based is copyright, the details of which have been provided below.
 
 Copyright (c) 2015-2017 Anish Athalye. Released under GPLv3. See
 [LICENSE.txt][LICENSE.txt] for details.
