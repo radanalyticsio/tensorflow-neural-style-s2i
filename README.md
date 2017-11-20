@@ -36,13 +36,8 @@ oc new-app --template neural-style --param=STYLE_URL=[url of style image] --para
 ## Using Pre-Trained Models
 Due to how this implementation of neural-style works, pre-trained models will only work when provided with the _exact same pair of content and style images_. 
 
-## Citations
-[neural-style]: https://github.com/anishathalye/neural-style
-[net]: http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
-[paper]: http://arxiv.org/pdf/1508.06576v2.pdf
-[l-bfgs]: https://en.wikipedia.org/wiki/Limited-memory_BFGS
-[adam]: http://arxiv.org/abs/1412.6980
-[ad]: https://en.wikipedia.org/wiki/Automatic_differentiation
-[lengstrom-fast-style-transfer]: https://github.com/lengstrom/fast-style-transfer
-[fast-neural-style]: https://arxiv.org/pdf/1603.08155v1.pdf
-[license]: LICENSE.txt
+## License
+The original code upon which this is based is copyright, the details of which have been provided below.
+
+Copyright (c) 2015-2017 Anish Athalye. Released under GPLv3. See
+[LICENSE.txt][LICENSE.txt] for details.
