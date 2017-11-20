@@ -20,7 +20,11 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
 fi
 
 echo "---> Installing application source..."
-cp -Rf /tmp/src/. ./
+ls  /tmp/src/.
+cp -R /tmp/src/ /opt/app-root/src/neural-style/
 
 echo "---> Building application from source..."
 # TODO: Add build steps for your application, eg npm install, bundle install, pip install, etc.
+
+wget http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat -O /opt/app-root/src/neural-style/imagenet-vgg-verydeep-19.mat
+chmod -R 777 /opt/app-root/src/neural-style

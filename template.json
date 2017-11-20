@@ -145,6 +145,12 @@
                                         "name": "CONTENT_FILE_NAME",
                                         "value": "${CONTENT_FILE_NAME}"
                                     },{
+                                        "name": "ITERATIONS",
+                                        "value": "${ITERATIONS}"
+                                    },{
+                                        "name": "WIDTH",
+                                        "value": "${WIDTH}"
+                                    },{
                                         "name": "MODEL_URL",
                                         "value": "${MODEL_URL}"
                                     },{
@@ -223,7 +229,7 @@
         {
             "name": "SOURCE_REPOSITORY",
             "description": "Git repository for source.",
-            "value": "https://github.com/RobGeada/empty.git",
+            "value": "https://github.com/RobGeada/neural-style.git",
             "required": true
         },
         {
@@ -241,12 +247,22 @@
             "name": "CONTENT_FILE_NAME",
             "description": " input content image name.",
             "value": "content.jpg",
-            "required": false
+            "required": true
         },{
             "name": "STYLE_FILE_NAME",
             "description": " input style image name.",
             "value": "style.jpg",
-            "required": false
+            "required": true
+        },{
+            "name": "ITERATIONS",
+            "description": " number of iterations to train for.",
+            "value": "1000",
+            "required": true
+        },{
+            "name": "WIDTH",
+            "description": " width of output image in pixels.",
+            "value": "1000",
+            "required": true
         },{
             "name": "MODEL_URL",
             "description": " model url.",

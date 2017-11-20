@@ -16,18 +16,15 @@ RUN yum install -y tree which python-pip \
 RUN pip install tensorflow scipy Pillow
 
 
-ADD neural-style /opt/app-root/src/neural-style/
+#ADD neural-style /opt/app-root/src/neural-style/
 
 #Drop the root user and make the content of /opt/app-root owned by user 1001
-RUN chown -R 1001:1001 /opt/app-root; \
-	chmod -R 777 /opt/app-root/src/neural-style;
+RUN chown -R 1001:1001 /opt/app-root;
 
 COPY ./s2i/bin/ /usr/libexec/s2i
 
 # This default user is created in the openshift/base-centos7 image
 USER 1001
-
-COPY s2i /opt/app-root/s2i
 
 EXPOSE 8080
 
