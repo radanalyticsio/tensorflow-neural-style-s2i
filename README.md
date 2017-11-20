@@ -4,7 +4,7 @@
 
 Neural-Style, as outlined by Gatys, Ecker and Bethge in _[A Neural Algorithm of Artistic Style, 2015](https://arxiv.org/pdf/1508.06576v2.pdf)_, is a method of training convultional neural nets to produce images that can stylistically mimic paintings. Specifically, a **content** image is painted in the style of **style** image, so for example, you can take your favorite selfie (the content image) and paint it in the style of Van Gogh's Starry Night (the style image). For some great examples, check out [this document](https://github.com/lengstrom/fast-style-transfer/blob/master/README.md) by Logan Engstrom.  
 
-This implementation is based off of a neural-style implementation by [Anish Athalye](https://github.com/anishathalye/neural-style), with some minor edits to his code. More on that [here](https://github.com/RobGeada/neural-style)
+This implementation is based off of a neural-style implementation by [Anish Athalye](https://github.com/anishathalye/neural-style), with some minor edits to his code. More on that [here](https://github.com/RobGeada/neural-style).
 
 ## Options
 * STYLE_URL: The URL at which your desired **style** image lives
