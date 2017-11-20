@@ -7,8 +7,8 @@ Neural-Style, as outlined by Gatys, Ecker and Bethge in _[A Neural Algorithm of 
 This implementation is based off of a neural-style implementation by [Anish Athalye](https://github.com/anishathalye/neural-style), with some minor edits to his code. More on that [here](https://github.com/RobGeada/neural-style).
 
 ## Options
-* `STYLE_URL`: The URL at which your desired **style** image lives
-* `CONTENT_URL`: The URL at which your desired **content** image lives
+* `STYLE_URL`: The URL at which your desired **style** image lives.
+* `CONTENT_URL`: The URL at which your desired **content** image lives.
 * `MODEL_URL`: If you already have a `.ckpt` file from a previous run of neural-style, you can point to it here.
 * `WIDTH`: The width of your output image. Height is automatically adjusted to maintain aspect ratio. 
 * `ITERATIONS`: The number of iterations to train over.
