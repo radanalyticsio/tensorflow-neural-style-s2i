@@ -40,4 +40,4 @@ Due to how this implementation of neural-style works, pre-trained models will on
 The original neural-style code upon which this is based is copyright, the details of which have been provided below.
 
 Copyright (c) 2015-2017 Anish Athalye. Released under GPLv3. See
-[LICENSE.txt][https://github.com/RobGeada/neural-style/blob/master/LICENSE.txt] for details.
+[LICENSE.txt](https://github.com/RobGeada/neural-style/blob/master/LICENSE.txt) for details.
