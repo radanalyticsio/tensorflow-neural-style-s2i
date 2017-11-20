@@ -19,7 +19,7 @@ Larger values of `WIDTH` and `ITERATIONS` will increase the quality of the outpu
 ```
 oc create template -f https://raw.githubusercontent.com/RobGeada/neural-style-s2i/master/template.json
 ```
-To train with default image settings (style=Great Wave off Kanagawa, content=Chicago Skyline, width=1000, iterations=1000):
+To train with default image settings (style=[Great Wave off Kanagawa](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1200px-Tsunami_by_hokusai_19th_century.jpg), content=[Chicago Skyline](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chicago_from_North_Avenue_Beach_June_2015_panorama_2.jpg/800px-Chicago_from_North_Avenue_Beach_June_2015_panorama_2.jpg), width=1000, iterations=1000):
 ```
 oc new-app --template neural-style
 ```
