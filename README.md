@@ -9,7 +9,7 @@ This implementation is based off of a neural-style implementation by [Anish Atha
 ## Options
 * STYLE_URL: The URL at which your desired **style** image lives
 * CONTENT_URL: The URL at which your desired **content** image lives
-* MODEL_URL: If you already have a `.ckpt` file from a previous run of neural-style, you can point to it here. This will speed up calculation tremendously, but will only work when used with the same pair of input images as it was originally trained with.
+* MODEL_URL: If you already have a `.ckpt` file from a previous run of neural-style, you can point to it here.
 * WIDTH: The width of your output image. Height is automatically adjusted to maintain aspect ratio. 
 * ITERATIONS: The number of iterations to train over.
 
@@ -32,3 +32,6 @@ To evaluate a pre-trained model:
 ```
 oc new-app --template neural-style --param=STYLE_URL=[url of style image] --param=CONTENT_URL=[url of content image] --param=MODEL_URL=[url of model] --param=WIDTH=1000 --param=ITERATIONS=1000
 ```
+
+## Using Pre-Trained Models
+Due to how this implementation of neural-style works, pre-trained models will only work when provided with the _exact same pair of content and style images_. 
