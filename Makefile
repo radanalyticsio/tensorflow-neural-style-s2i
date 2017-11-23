@@ -1,5 +1,5 @@
 
-IMAGE_NAME = rgeada/neural-style-s2i
+IMAGE_NAME = neural-style-s2i
 
 .PHONY: build
 build:
